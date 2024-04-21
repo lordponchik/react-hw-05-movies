@@ -1,16 +1,15 @@
+import { HomePage } from 'pages/HomePages/HomePages';
+import { SharedLayout } from 'components/SharedLayout/SharedLayout';
+import { Route, Routes } from 'react-router-dom';
+import { MoviesPage } from 'pages/MoviesPage/MoviesPage';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <Routes>
+      <Route path="/" element={<SharedLayout />}>
+        <Route index element={<HomePage />}></Route>
+        <Route path="movies" element={<MoviesPage />}></Route>
+      </Route>
+    </Routes>
   );
 };
