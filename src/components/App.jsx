@@ -1,4 +1,4 @@
-import { HomePage } from 'pages/HomePages/HomePages';
+import { HomePage } from 'pages/HomePage/HomePage';
 import { SharedLayout } from 'components/SharedLayout/SharedLayout';
 import { Route, Routes } from 'react-router-dom';
 import { MoviesPage } from 'pages/MoviesPage/MoviesPage';
