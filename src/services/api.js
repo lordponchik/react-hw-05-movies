@@ -23,3 +23,17 @@ export const fetchSearchMovie = async q => {
 
   return data;
 };
+
+export const fetchMovieDetails = async id => {
+  const response = await axios.get(`${url}/movie/${id}`, options);
+  const data = await response.data;
+
+  return data;
+};
+
+export const fetchCast = async id => {
+  const response = await axios.get(`${url}/movie/${id}/credits`, options);
+  const data = await response.data;
+
+  return data;
+};
