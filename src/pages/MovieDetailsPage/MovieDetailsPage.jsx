@@ -61,7 +61,7 @@ const MovieDetailsPage = () => {
                   className={s.poster}
                   width={300}
                 />
-                <div>
+                <div className={s.wrapperDescription}>
                   <div className={s.meta}>
                     <h1 className={s.title}>
                       {movie.original_title} ({movie.release_date.split('-')[0]}
