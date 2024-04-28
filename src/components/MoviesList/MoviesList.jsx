@@ -1,20 +1,30 @@
-import s from './MoviesList.module.css';
+import { Link } from 'react-router-dom';
 
-export const MoviesList = ({ movies }) => {
+import s from './MoviesList.module.css';
+import no_posterMovie from '../../images/no_posterMovie.jpg';
+
+const poster = `https://image.tmdb.org/t/p/w300/`;
+
+export const MoviesList = ({ movies, loc }) => {
   return (
     <ul className={s.movies}>
       {movies.map(({ id, poster_path, title }) => {
         return (
           <li key={id} className={s.moviesItem}>
-            <img
-              loading="lazy"
-              src={`https://image.tmdb.org/t/p/w300/${poster_path}`}
-              alt="title"
-              width={280}
-            />
-            <div className={s.movieMeta}>
-              <h2 className={s.movieTitle}>{title}</h2>
-            </div>
+            <Link
+              to={loc.pathname === '/' ? `movies/${id}` : `${id}`}
+              state={{ from: loc }}
+            >
+              <img
+                loading="lazy"
+                src={poster_path ? `${poster}${poster_path}` : no_posterMovie}
+                alt="title"
+                width={280}
+              />
+              <div className={s.movieMeta}>
+                <h2 className={s.movieTitle}>{title}</h2>
+              </div>
+            </Link>
           </li>
         );
       })}
