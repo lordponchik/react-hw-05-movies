@@ -1,0 +1,21 @@
+.cast {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+
+  list-style: none;
+}
+.castItem {
+  display: flex;
+  width: 350px;
+
+  align-items: center;
+}
+.castImg {
+  margin-right: 10px;
+}
+
+.castTitle {
+  margin-bottom: 10px;
+}
