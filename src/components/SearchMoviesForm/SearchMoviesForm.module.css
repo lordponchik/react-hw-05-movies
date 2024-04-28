@@ -17,6 +17,7 @@
 }
 .submitBtn {
   width: 40px;
+  min-width: 40px;
   height: auto;
   padding: 5px;
   display: flex;
