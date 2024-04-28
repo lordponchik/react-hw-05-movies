@@ -29,7 +29,7 @@
   fill: #e2e0d4;
 
   transform: translate(-50%, 300%);
-  transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 2s cubic-bezier(0.19, 1, 0.22, 1);
 }
 .movieMeta {
   position: absolute;
