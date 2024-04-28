@@ -3,7 +3,10 @@
 
   background-color: #4a4658;
 }
-
+.nav {
+  display: flex;
+  justify-content: center;
+}
 .navLink {
   display: inline-flex;
   padding: 10px 15px;
