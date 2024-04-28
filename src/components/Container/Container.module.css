@@ -1,27 +1,27 @@
 .container {
   box-sizing: border-box;
-  width: 300px;
+  max-width: 450px;
   margin: 0 auto;
   padding-left: 40px;
   padding-right: 40px;
 }
 @media screen and (min-width: 680px) {
   .container {
-    width: 680px;
+    max-width: 650px;
   }
 }
 @media screen and (min-width: 980px) {
   .container {
-    width: 980px;
+    max-width: 980px;
   }
 }
 @media screen and (min-width: 1280px) {
   .container {
-    width: 1280px;
+    max-width: 1280px;
   }
 }
 @media screen and (min-width: 1580px) {
   .container {
-    width: 1580px;
+    max-width: 1580px;
   }
 }

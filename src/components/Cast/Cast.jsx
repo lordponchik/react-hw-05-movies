@@ -35,35 +35,31 @@ const Cast = () => {
   return (
     <>
       <Section>
-        <Container>
-          {movCast ? (
-            <ul className={s.cast}>
-              {movCast.map(({ id, name, character, profile_path }) => {
-                return (
-                  <li key={id} className={s.castItem}>
-                    <img
-                      src={
-                        profile_path
-                          ? `${poster}${profile_path}`
-                          : no_posterCast
-                      }
-                      alt={name}
-                      width={100}
-                      height={150}
-                      className={s.castImg}
-                    />
-                    <div className={s.castMeta}>
-                      <h3 className={s.castTitle}>{name}</h3>
-                      <p>Character: {character}</p>
-                    </div>
-                  </li>
-                );
-              })}
-            </ul>
-          ) : (
-            <LackInformation information={'cast'}></LackInformation>
-          )}
-        </Container>
+        {movCast ? (
+          <ul className={s.cast}>
+            {movCast.map(({ id, name, character, profile_path }) => {
+              return (
+                <li key={id} className={s.castItem}>
+                  <img
+                    src={
+                      profile_path ? `${poster}${profile_path}` : no_posterCast
+                    }
+                    alt={name}
+                    width={100}
+                    height={150}
+                    className={s.castImg}
+                  />
+                  <div className={s.castMeta}>
+                    <h3 className={s.castTitle}>{name}</h3>
+                    <p>Character: {character}</p>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
+        ) : (
+          <LackInformation information={'cast'}></LackInformation>
+        )}
       </Section>
       {isLoading && <Loader />}
     </>
