@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { FaSearch } from 'react-icons/fa';
 
 import s from './MoviesList.module.css';
 import no_posterMovie from '../../images/no_posterMovie.jpg';
@@ -14,6 +15,7 @@ export const MoviesList = ({ movies, loc }) => {
             <Link
               to={loc.pathname === '/' ? `movies/${id}` : `${id}`}
               state={{ from: loc }}
+              className={s.movieLink}
             >
               <img
                 loading="lazy"
@@ -24,6 +26,8 @@ export const MoviesList = ({ movies, loc }) => {
               <div className={s.movieMeta}>
                 <h2 className={s.movieTitle}>{title}</h2>
               </div>
+
+              <FaSearch className={s.searchIcon} />
             </Link>
           </li>
         );
