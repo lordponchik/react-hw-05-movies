@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { CiSearch } from 'react-icons/ci';
 import { toast } from 'react-toastify';
+import PropTypes from 'prop-types';
 
 import s from './SearchMoviesForm.module.css';
 
@@ -49,4 +50,8 @@ export const SearchMoviesForm = ({ handleSubmit }) => {
       </button>
     </form>
   );
+};
+
+SearchMoviesForm.propTypes = {
+  handleSubmit: PropTypes.func.isRequired,
 };
