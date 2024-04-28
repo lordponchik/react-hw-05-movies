@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { FaSearch } from 'react-icons/fa';
+import PropTypes from 'prop-types';
 
 import s from './MoviesList.module.css';
 import no_posterMovie from '../../images/no_posterMovie.jpg';
@@ -34,4 +35,15 @@ export const MoviesList = ({ movies, loc }) => {
       })}
     </ul>
   );
+};
+
+MoviesList.propTypes = {
+  movies: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      poster_path: PropTypes.string,
+      title: PropTypes.string,
+    }).isRequired
+  ),
+  loc: PropTypes.shape(),
 };
