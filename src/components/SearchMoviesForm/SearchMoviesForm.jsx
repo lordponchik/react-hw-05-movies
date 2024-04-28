@@ -13,7 +13,7 @@ export const SearchMoviesForm = ({ handleSubmit }) => {
   useEffect(() => {
     if (query === null) return;
     setValueQuery(query);
-  }, []);
+  }, [query]);
 
   const onSubmit = e => {
     e.preventDefault();
