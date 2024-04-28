@@ -13,12 +13,7 @@
 }
 
 .movie {
-  display: flex;
   margin-bottom: 25px;
-}
-
-.poster {
-  margin-right: 20px;
 }
 
 .meta:not(:last-child) {
@@ -67,4 +62,13 @@
 
 .addInfoItem:not(:last-child) {
   margin-right: 20px;
+}
+
+@media screen and (min-width: 980px) {
+  .movie {
+    display: flex;
+  }
+  .poster {
+    margin-right: 20px;
+  }
 }
