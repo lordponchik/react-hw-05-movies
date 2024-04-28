@@ -7,7 +7,6 @@ import s from './Cast.module.css';
 import { LackInformation } from 'components/LackInformation/LackInformation';
 import no_posterCast from '../../images/no_posterCast.jpg';
 import { Section } from 'components/Section/Section';
-import { Container } from 'components/Container/Container';
 
 const poster = `https://image.tmdb.org/t/p/w300`;
 
