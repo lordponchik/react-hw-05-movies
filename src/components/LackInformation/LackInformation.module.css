@@ -1,0 +1,13 @@
+.title {
+  opacity: 0;
+  animation: title 2s cubic-bezier(0.19, 1, 0.22, 1) both;
+}
+
+@keyframes title {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
