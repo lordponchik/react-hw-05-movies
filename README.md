@@ -13,10 +13,13 @@
 # Acceptance criteria
 
 - A repository has been created `react-hw-05-movies`
-- When submitting homework, there are links to: source files and working pages of each project on `GitHub Pages`
-- The component state stores the minimum required set of data, the rest is computed
+- When submitting homework, there are links to: source files and working pages
+  of each project on `GitHub Pages`
+- The component state stores the minimum required set of data, the rest is
+  computed
 - When running the task code, there are no errors or warnings in the console
-- For each component, there is a separate folder with a React component file and a style file
+- For each component, there is a separate folder with a React component file and
+  a style file
 - `propTypes` are described for components
 - Everything that the component expects as props is passed to it when called.
 - Component names are clear and descriptive
@@ -25,42 +28,50 @@
 
 ## Task "Kinopoisk"
 
-Create basic routing for the application of searching and storing movies. Preview
-of the working application
+Create basic routing for the application of searching and storing movies.
+Preview of the working application
 [see the link](https://drive.google.com/file/d/1vR0hi3n1236Q5Bg4-se-8JVKD9UKSfId/view?usp=sharing).
 
 ## themoviedb.org API
 
-For the backend, use the [themoviedb.org API](https://www.themoviedb.org/).
-You need to register (you can enter arbitrary data) and get an API key. The following endpoints will be used in this work.
+For the backend, use the [themoviedb.org API](https://www.themoviedb.org/). You
+need to register (you can enter arbitrary data) and get an API key. The
+following endpoints will be used in this work.
 
 - [/trending/get-trending](https://developers.themoviedb.org/3/trending/get-trending)
-list of the most popular movies today to create a collection on the main page.
-- [/search/search-movies](https://developers.themoviedb.org/3/search/search-movies) search for a movie by keyword on the movies page.
-- [/movies/get-movie-details](https://developers.themoviedb.org/3/movies/get-movie-details) request full information about a movie for a movie page.
-- [/movies/get-movie-credits](https://developers.themoviedb.org/3/movies/get-movie-credits) request information about the cast for a movie page.
-- [/movies/get-movie-reviews](https://developers.themoviedb.org/3/movies/get-movie-reviews) Request reviews for a movie page.
+  list of the most popular movies today to create a collection on the main page.
+- [/search/search-movies](https://developers.themoviedb.org/3/search/search-movies)
+  search for a movie by keyword on the movies page.
+- [/movies/get-movie-details](https://developers.themoviedb.org/3/movies/get-movie-details)
+  request full information about a movie for a movie page.
+- [/movies/get-movie-credits](https://developers.themoviedb.org/3/movies/get-movie-credits)
+  request information about the cast for a movie page.
+- [/movies/get-movie-reviews](https://developers.themoviedb.org/3/movies/get-movie-reviews)
+  Request reviews for a movie page.
 
 [Documentation link](https://developers.themoviedb.org/3/getting-started/introduction)
 
 ## Routes
 
-The application must have the following routes. If the user enters a non-existent route, he must be redirected to the home page.
+The application must have the following routes. If the user enters a
+non-existent route, he must be redirected to the home page.
 
 - `'/'` - `<HomePage>` component, home page with a list of popular movies.
 - `'/movies'` - `<MoviesPage>` component, page for searching movies by keyword.
-- `'/movies/:movieId'` - `<MovieDetailsPage>` component, page with detailed information about a movie.
+- `'/movies/:movieId'` - `<MovieDetailsPage>` component, page with detailed
+  information about a movie.
 - `/movies/:movieId/cast` - `<Cast>` component, information about the cast.
-Rendered on the `<MovieDetailsPage>` page.
-- `/movies/:movieId/reviews` - ​​`<Reviews>` component, information about reviews.
-Rendered on the `<MovieDetailsPage>` page.
+  Rendered on the `<MovieDetailsPage>` page.
+- `/movies/:movieId/reviews` - ​​`<Reviews>` component, information about
+  reviews. Rendered on the `<MovieDetailsPage>` page.
 
 ## Code Splitting
 
-Add asynchronous loading of JS code for application routes using
-`React.lazy()` and `Suspense`.
+Add asynchronous loading of JS code for application routes using `React.lazy()`
+and `Suspense`.
 
 ---
+
 ---
 
 <h3 id="uk">📚 UK 📚 <a href="#home">⬆ Home ⬆</a></h3>
@@ -68,8 +79,10 @@ Add asynchronous loading of JS code for application routes using
 # Критерії вступу
 
 - Створено репозиторій `react-hw-05-movies`
-- При здачі домашнього завдання є посилання на: вихідні файли та робочі сторінки кожного проекту на `GitHub Pages`
-- Стан компонента зберігає мінімально необхідний набір даних, Решта розраховується
+- При здачі домашнього завдання є посилання на: вихідні файли та робочі сторінки
+  кожного проекту на `GitHub Pages`
+- Стан компонента зберігає мінімально необхідний набір даних, Решта
+  розраховується
 - При виконанні коду завдання в консолі відсутні помилки і попередження
 - Для кожного компонента є окрема папка з файлом компонента React та Стилі
 - Для компонентів описані `propTypes`
@@ -80,17 +93,20 @@ Add asynchronous loading of JS code for application routes using
 
 ## Завдання "Кинопоиск"
 
-Створіть базову маршрутизацію для програми пошуку та зберігання фільмів. Попередній перегляд
-Робочий додаток
+Створіть базову маршрутизацію для програми пошуку та зберігання фільмів.
+Попередній перегляд Робочий додаток
 [див. посилання](https://drive.google.com/file/d/1vR0hi3n1236Q5Bg4-se-8JVKD9UKSfId/view?usp=sharing).
 
 ## API themoviedb.org
 
-Для серверної частини використовуйте [themoviedb.org API](https://www.themoviedb.org/).
-Необхідно зареєструватися (можна вводити довільні дані) і отримати Ключ API. У цій роботі будуть використовуватися наступні кінцеві точки.
+Для серверної частини використовуйте
+[themoviedb.org API](https://www.themoviedb.org/). Необхідно зареєструватися
+(можна вводити довільні дані) і отримати Ключ API. У цій роботі будуть
+використовуватися наступні кінцеві точки.
 
 - [/trending/get-trending](https://developers.themoviedb.org/3/trending/get-trending)
-  Список найпопулярніших фільмів сучасності для створення колекції на головній сторінці Сторінка.
+  Список найпопулярніших фільмів сучасності для створення колекції на головній
+  сторінці Сторінка.
 - [/search/search-movies](https://developers.themoviedb.org/3/search/search-movies)
   Знайдіть фільм за ключовим словом на сторінці фільмів.
 - [/movies/get-movie-details](https://developers.themoviedb.org/3/movies/get-movie-details)
@@ -104,22 +120,24 @@ Add asynchronous loading of JS code for application routes using
 
 ## Маршрути
 
-У додатку повинні бути наступні маршрути. Якщо користувач увійшов за маршрутом, якого не існує, його необхідно перенаправити на головну сторінку.
+У додатку повинні бути наступні маршрути. Якщо користувач увійшов за маршрутом,
+якого не існує, його необхідно перенаправити на головну сторінку.
 
-- `'/'` - компонент `<HomePage>`, домашня сторінка зі списком популярних фільмів.
-- `'/movies'` - компонент `<MoviesPage>`, сторінка для пошуку фільмів за ключовим словом.
-- `'/movies/:movieId'` - компонент, `<MovieDetailsPage>` сторінка з детальною інформацією про фільм.
-- `'/movies/:movieId/cast'` - компонент `<Cast>`, інформація про акторський склад.
-  Відображається на сторінці.`<MovieDetailsPage>`
+- `'/'` - компонент `<HomePage>`, домашня сторінка зі списком популярних
+  фільмів.
+- `'/movies'` - компонент `<MoviesPage>`, сторінка для пошуку фільмів за
+  ключовим словом.
+- `'/movies/:movieId'` - компонент, `<MovieDetailsPage>` сторінка з детальною
+  інформацією про фільм.
+- `'/movies/:movieId/cast'` - компонент `<Cast>`, інформація про акторський
+  склад. Відображається на сторінці.`<MovieDetailsPage>`
 - `'/movies/:movieId/reviews'` - компонент `<Reviews>`, інформація про відгуки.
   Відображається на сторінці.`<MovieDetailsPage>`
-
 
 ## Розбиття коду
 
 Додано асинхронне завантаження JS для маршрутів додатків за допомогою
 `React.lazy()` та `Suspense`.
-
 
 ---
 
